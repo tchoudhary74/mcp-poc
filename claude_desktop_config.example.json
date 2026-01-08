@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "splunk": {
+      "command": "node",
+      "args": [
+        "/Users/tharunchoudhary/Desktop/Projects/splunk-mcp-poc/dist/index.js"
+      ],
+      "env": {
+        "SPLUNK_HOST": "https://your-splunk-instance.com:8089",
+        "SPLUNK_TOKEN": "your-splunk-auth-token",
+        "SPLUNK_VERIFY_SSL": "false",
+        "SPLUNK_APP": "search",
+        "MAX_RESULTS": "1000",
+        "LOG_LEVEL": "info"
+      }
+    }
+  }
+}

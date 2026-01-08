@@ -1,0 +1,45 @@
+{
+  "name": "splunk-mcp-poc",
+  "version": "1.0.0",
+  "description": "Splunk MCP Server POC - Connect Claude Desktop to Splunk for AI-assisted log analysis",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "watch": "tsc --watch",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "splunk",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "security",
+    "soc"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.6.5",
+    "date-fns": "^3.0.6",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0",
+    "zod": "^3.22.4"
+  },
+  "optionalDependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.490.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
